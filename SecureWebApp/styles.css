@@ -1,0 +1,113 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f6fa;
+  color: #2f3640;
+  margin: 0;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.dark-mode {
+  background-color: #2f3640;
+  color: #f5f6fa;
+}
+h2, h3 {
+  color: inherit;
+}
+a {
+  color: #0984e3;
+  text-decoration: none;
+}
+form {
+  margin-bottom: 20px;
+}
+input, select, button {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.dark-mode input,
+.dark-mode select,
+.dark-mode button {
+  background-color: #353b48;
+  color: #f5f6fa;
+  border-color: #666;
+}
+button {
+  background-color: #0984e3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+button:hover {
+  background-color: #74b9ff;
+}
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.dark-mode .task-table {
+  background: #353b48;
+}
+.task-table th, .task-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #f1f1f1;
+}
+.task-table th {
+  background-color: #f1f2f6;
+  font-weight: bold;
+}
+.task-table tr:hover {
+  background-color: #f9f9f9;
+}
+.dark-mode .task-table tr:hover {
+  background-color: #3d3d3d;
+}
+.overdue {
+  background-color: #ffe6e6 !important;
+}
+form[action="task_actions.php"] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+}
+form[action="task_actions.php"] input[type="text"],
+form[action="task_actions.php"] input[type="date"],
+form[action="task_actions.php"] select {
+  flex: 1;
+  min-width: 100px;
+}
+form[action="task_actions.php"] button {
+  padding: 8px 12px;
+  font-size: 13px;
+}
+#add-task-form {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-top: 30px;
+}
+#add-task-form input,
+#add-task-form select,
+#add-task-form button {
+  width: 100%;
+  margin: 5px 0;
+}
+.dark-toggle {
+  float: right;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #0984e3;
+}
