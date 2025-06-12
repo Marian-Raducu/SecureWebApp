@@ -34,5 +34,5 @@ A PHP-based secure web application designed to demonstrate user authentication, 
 ## 🚀 Getting Started
 
 1. **Clone the Repository:**
-   
+   ```bash
    git clone https://github.com/Marian-Raducu/SecureWebApp.git
